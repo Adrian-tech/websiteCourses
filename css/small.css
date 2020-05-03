@@ -1,0 +1,16 @@
+#aboutus-creation h2 {
+  font-size: 2rem;
+}
+
+#aboutus-creation p {
+  font-size: 18px;
+}
+
+#prices .wrapper-prices {
+  width: 70%;
+}
+
+#team .jumbotron .card-body {
+  height: 120px;
+}
+/*# sourceMappingURL=small.css.map */

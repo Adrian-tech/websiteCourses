@@ -1,0 +1,28 @@
+header .header-text h1 {
+  font-size: 43px;
+}
+
+header .header-text p {
+  font-size: 18px;
+}
+
+#prices .price-info {
+  font-size: 23px;
+}
+
+#prices .wrapper-prices {
+  width: 90%;
+}
+
+#team .jumbotron .card-body {
+  height: 150px;
+}
+
+#achievments .jumbotron h3 {
+  font-size: 28px;
+}
+
+#achievments .jumbotron p {
+  font-size: 16px;
+}
+/*# sourceMappingURL=medium.css.map */

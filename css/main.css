@@ -1,0 +1,392 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-family: 'Montserrat', sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+  background-color: #333333;
+}
+
+.logo-color {
+  color: #5ca8e6;
+}
+
+.wrapper {
+  max-width: 2560px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.underline {
+  width: 60px;
+  height: 3px;
+  margin: 0 auto 40px;
+  background-color: #5ca8e6;
+}
+
+h2 {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.scroll-fix::before {
+  content: '';
+  display: block;
+  height: 66px;
+  margin-top: -66px;
+}
+
+.hero-bg {
+  position: absolute;
+  top: 0;
+  z-index: -10;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.visibility {
+  visibility: hidden;
+}
+
+.jumbotron {
+  margin: 0;
+}
+
+nav {
+  text-transform: uppercase;
+  -webkit-transition: background-color .6s;
+  transition: background-color .6s;
+}
+
+nav a, nav i {
+  color: #ffffff;
+}
+
+nav a {
+  -webkit-transition: color .3s;
+  transition: color .3s;
+}
+
+nav i {
+  padding: 10px;
+}
+
+nav a:hover, nav .active {
+  color: #5ca8e6;
+}
+
+nav .navbar-brand {
+  font-weight: bold;
+}
+
+.shadow-bg {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+header {
+  color: #fff;
+  overflow: hidden;
+}
+
+header .hero-img {
+  position: relative;
+  z-index: 0;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  background-image: url("../img/laptop-2557576_1280.jpg");
+}
+
+header .header-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  height: 100%;
+}
+
+header .header-text h1 {
+  margin: 0;
+  padding: 10px;
+  text-transform: uppercase;
+  font-size: 31px;
+}
+
+header .header-text p {
+  font-size: 14px;
+}
+
+header .fa-angle-down {
+  display: none;
+}
+
+#aboutus i {
+  margin-top: 30px;
+  font-size: 30px;
+}
+
+#aboutus h3 {
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+#aboutus p {
+  font-size: 14px;
+}
+
+#aboutus .section-elements-hover {
+  padding: 0;
+  -webkit-transition: color .3s;
+  transition: color .3s;
+}
+
+#aboutus .section-elements-hover:hover {
+  color: #5ca8e6;
+}
+
+#aboutus-creation .hero-img-creation {
+  position: relative;
+  z-index: 0;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../img/computer-2593921_1280.jpg");
+  color: #eee;
+  overflow: hidden;
+}
+
+#aboutus-creation .jumbotron {
+  padding: 50px 0;
+}
+
+#aboutus-creation h2 {
+  font-size: 26px;
+}
+
+#aboutus-creation h3 {
+  text-transform: uppercase;
+  font-size: 22px;
+  margin-top: 30px;
+}
+
+#aboutus-creation p {
+  font-size: 14px;
+}
+
+#aboutus-creation p i {
+  margin: 0;
+  font-size: 35px;
+}
+
+#portfolio .card {
+  margin: 20px 5px;
+}
+
+@media (min-width: 375px) {
+  header .header-text h1 {
+    font-size: 35px;
+  }
+  header .header-text p {
+    font-size: 16px;
+  }
+  #aboutus-creation h2 {
+    font-size: 30px;
+  }
+  #aboutus-creation h3 {
+    font-size: 23px;
+  }
+  #aboutus-creation p {
+    font-size: 16px;
+  }
+}
+
+#prices .jumbotron {
+  background-color: #f9f9f9;
+}
+
+#prices .wrapper-prices {
+  max-width: 2560px;
+  width: 95%;
+  margin: 0 auto;
+}
+
+#prices .price-box {
+  background: #fff;
+  padding: 20px;
+  margin: 20px;
+  -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+          box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+  color: #313131;
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+}
+
+#prices .price-box .order {
+  padding: 5px 15px;
+  border: none;
+  background-color: #888888;
+  color: #fff;
+}
+
+#prices .price-box .order:hover {
+  background-color: #777;
+}
+
+#prices .price-box .best-order {
+  background-color: #23deff;
+}
+
+#prices .price-box .best-order:hover {
+  background-color: #12cdee;
+}
+
+#prices .price-box i {
+  margin: 0 5px;
+}
+
+#prices .price-box .price-box-prices {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#prices .price-box h3 {
+  color: #5ca8e6;
+  text-transform: uppercase;
+}
+
+#prices .price-box:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+#prices .prices-text {
+  margin-top: 30px;
+}
+
+#team .jumbotron {
+  position: relative;
+  z-index: 0;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../img/roundtable-828546_1280.jpg");
+}
+
+#team .jumbotron h2 {
+  color: #fff;
+}
+
+#team .jumbotron h5 {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 21px;
+}
+
+#team .jumbotron .card-text {
+  font-size: 15px;
+}
+
+#team .jumbotron .card {
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+}
+
+#team .jumbotron .card i {
+  padding: 10px 20px;
+  font-size: 25px;
+}
+
+#team .jumbotron .card img {
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#team .jumbotron .card .row {
+  margin: 0;
+}
+
+#team .jumbotron .card:hover {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+
+#team .jumbotron .card-body {
+  height: 150px;
+}
+
+#achievments .jumbotron .achievement-item {
+  padding: 20px 0;
+}
+
+#achievments .jumbotron i {
+  font-size: 28px;
+  color: #fff;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+}
+
+#achievments .jumbotron h3 {
+  font-size: 25px;
+  color: #727272;
+}
+
+#achievments .jumbotron p {
+  font-size: 14px;
+  color: #727272;
+}
+
+@media (min-width: 414px) {
+  #aboutus-creation .jumbotron {
+    padding: 70px 0;
+  }
+  #aboutus-creation .jumbotron h2 {
+    font-size: 30px;
+    font-size: 33px;
+  }
+  #team .jumbotron .card i {
+    padding: 20px 20px;
+  }
+  #team .jumbotron .card img {
+    height: 300px;
+  }
+  #team .jumbotron .card .card-text {
+    font-size: 15px;
+  }
+  #achievments .jumbotron i {
+    font-size: 32px;
+  }
+  #achievments .jumbotron h3 {
+    font-size: 27px;
+  }
+  #achievments .jumbotron p {
+    font-size: 15px;
+  }
+}
+/*# sourceMappingURL=main.css.map */
